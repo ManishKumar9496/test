@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy World - Online Toy Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🧸 Toy World</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#toys">Toys</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-btn" onclick="showCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h1>Fun Starts Here! 🎉</h1>
+            <p>Discover amazing toys for kids of all ages.</p>
+            <a href="#toys" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="toys" class="products">
+        <h2>Our Toys</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+                <div class="toy-image">🚗</div>
+                <h3>Racing Car</h3>
+                <p>Fast and exciting toy car.</p>
+                <h4>₹299</h4>
+                <button onclick="addToCart('Racing Car', 299)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="toy-image">🧸</div>
+                <h3>Teddy Bear</h3>
+                <p>Soft and cuddly teddy bear.</p>
+                <h4>₹499</h4>
+                <button onclick="addToCart('Teddy Bear', 499)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="toy-image">🤖</div>
+                <h3>Robot Toy</h3>
+                <p>Interactive robot for kids.</p>
+                <h4>₹799</h4>
+                <button onclick="addToCart('Robot Toy', 799)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <div class="toy-image">🚁</div>
+                <h3>Remote Helicopter</h3>
+                <p>Exciting remote-controlled helicopter.</p>
+                <h4>₹1,299</h4>
+                <button onclick="addToCart('Remote Helicopter', 1299)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Toy World</h2>
+        <p>
+            Toy World is your online destination for fun, creative,
+            and exciting toys for children.
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@toyworld.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Toy World. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
