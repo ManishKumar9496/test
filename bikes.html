@@ -1,0 +1,122 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike World</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .bike {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .bike h2 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px;
+        }
+
+        button {
+            background: #222;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🏍️ Bike World</h1>
+        <p>Explore Our Bike Collection</p>
+    </header>
+
+    <div class="container">
+
+        <div class="bike">
+            <h2>Mountain Bike</h2>
+            <p>Strong and comfortable bike for adventures.</p>
+            <div class="price">₹1,499</div>
+            <button onclick="buyBike('Mountain Bike')">
+                Buy Now
+            </button>
+        </div>
+
+        <div class="bike">
+            <h2>Road Bike</h2>
+            <p>Lightweight bike for fast road rides.</p>
+            <div class="price">₹2,499</div>
+            <button onclick="buyBike('Road Bike')">
+                Buy Now
+            </button>
+        </div>
+
+        <div class="bike">
+            <h2>Electric Bike</h2>
+            <p>Modern electric bike for easy commuting.</p>
+            <div class="price">₹45,999</div>
+            <button onclick="buyBike('Electric Bike')">
+                Buy Now
+            </button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Bike World</p>
+    </footer>
+
+    <script>
+        function buyBike(bikeName) {
+            alert("You selected: " + bikeName);
+        }
+    </script>
+
+</body>
+</html>
+```
